@@ -1,0 +1,47 @@
+@include pc {
+  .footer {
+    background: #4071d3;
+    padding: 4.3rem 0 7rem;
+    position: relative;
+    color: #fff;
+    z-index: 12;
+    margin-top: -0.2rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+    .logo {
+      display: block;
+      width: 22.3rem;
+      height: 5.4rem;
+      margin-bottom: 2.3rem;
+    }
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+@include sp {
+  .footer {
+    margin-top: -1px;
+    background: #4071d3;
+    padding: 0.4rem 0.5rem 5rem;
+    position: relative;
+    color: #fff;
+    z-index: 12;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+    .logo {
+      display: block;
+      width: 15.4rem;
+      height: 3.8rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

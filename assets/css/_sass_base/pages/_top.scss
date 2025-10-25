@@ -1,0 +1,1193 @@
+@include pc {
+  .page-ttl {
+    margin-bottom: 5.6rem;
+    .en {
+      font-family: var(--font-komu);
+      font-size: 14rem;
+      line-height: 0.7;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.5rem;
+      span {
+        color: #4071d3;
+      }
+    }
+    .ja {
+      position: relative;
+      font-size: 1.6rem;
+      padding-left: 29.9rem;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: #222;
+        width: 28.7rem;
+        height: 1px;
+      }
+    }
+    &__sub {
+      margin-top: 1.4rem;
+      line-height: calc(31 / 16);
+      letter-spacing: 0.1em;
+    }
+  }
+
+  .mv {
+    position: relative;
+    height: 96.9rem;
+    height: 100svh;
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("../images/bg_mv.png") no-repeat;
+      background-size: cover;
+    }
+
+    &-title {
+      position: absolute;
+      z-index: 5;
+      left: 18rem;
+      top: 53%;
+      transform: translateY(-50%);
+      &__bg {
+        display: block;
+        font-size: 5.5rem;
+        letter-spacing: -0.05em;
+        padding: 0.8rem 4.6rem 0.8rem;
+        width: 51.1rem;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        color: #fff;
+        background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
+        &:not(:last-child) {
+          margin-bottom: 3.3rem;
+        }
+      }
+      &__line {
+        position: relative;
+        padding-left: 23.3rem;
+        margin-top: -0.5rem;
+        color: #fff;
+        font-size: 2.2rem;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 21.8rem;
+          height: 1px;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .about {
+    position: relative;
+    padding-block: 24rem;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 2rem;
+      top: 0;
+      width: 36.8rem;
+      height: 75.4rem;
+      background: #4071d3;
+      z-index: -1;
+    }
+
+    &-wrap {
+      display: flex;
+      align-items: center;
+      padding-inline: 2.5rem;
+
+      .about-image {
+        width: 48.5rem;
+        height: 31.5rem;
+        flex-shrink: 0;
+        margin-right: 5.5rem;
+      }
+
+      .about-content {
+        width: 100%;
+        .title {
+          width: 52.4rem;
+          margin-bottom: 5.7rem;
+        }
+        .text {
+          margin-left: 0.5rem;
+          text-align: justify;
+          letter-spacing: 0.1em;
+          font-size: 1.6rem;
+          line-height: calc(31 / 16);
+        }
+      }
+    }
+  }
+
+  .service {
+    position: relative;
+    padding-block: 12.8rem 6.4rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 36rem;
+      background: #f2f2f2;
+    }
+    &-wrap {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+    }
+
+    &-content {
+      width: calc(522 / 1920 * 100vw);
+      min-width: 51rem;
+      flex-shrink: 0;
+      margin-right: 9.4rem;
+      .title {
+        font-family: "KozGoPr6N W7", sans-serif;
+        font-size: 3.2rem;
+        letter-spacing: 0.1em;
+        line-height: calc(45 / 32);
+        margin-bottom: 1.7rem;
+      }
+      .text {
+        letter-spacing: 0.1em;
+        line-height: calc(31 / 16);
+      }
+    }
+
+    &-image {
+      margin-top: -0.6rem;
+      width: calc(888 / 1920 * 100vw);
+      height: calc(451 / 1920 * 100vw);
+      min-width: 59rem;
+      min-height: 35rem;
+      img {
+        object-position: left;
+      }
+    }
+  }
+
+  .strength {
+    padding-block: 20rem;
+    &-title {
+      margin-bottom: 3rem;
+      .ja {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 500;
+        font-size: 6.5rem;
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+      .en {
+        font-family: var(--font-komu);
+        font-size: 14rem;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+        letter-spacing: 0.05em;
+      }
+    }
+    &-wrap {
+      display: flex;
+      .image {
+        width: 46.4rem;
+        height: 60.5rem;
+        flex-shrink: 0;
+        margin-right: 3.5rem;
+      }
+
+      .content {
+        margin-top: 3.9rem;
+        .item {
+          &:not(:last-child) {
+            margin-bottom: 7.8rem;
+          }
+          &-head {
+            display: flex;
+            align-items: center;
+            gap: 2.4rem;
+            .num {
+              font-family: var(--font-komu);
+              font-size: 4.9rem;
+              width: 8.4rem;
+              height: 8.4rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #222;
+              border-radius: 50%;
+            }
+            .title {
+              .en {
+                font-family: var(--font-komu);
+                font-size: 2rem;
+                color: #4071d3;
+                letter-spacing: 0.1em;
+                line-height: calc(28 / 20);
+              }
+              .ja {
+                font-size: 3.2rem;
+                letter-spacing: 0.1em;
+                line-height: calc(45 / 32);
+              }
+            }
+          }
+          .text {
+            margin-top: -0.5rem;
+            padding-left: 10.8rem;
+            font-size: 1.6rem;
+            line-height: calc(31 / 16);
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+    }
+  }
+
+  .works {
+    padding-block: 6.2rem 15rem;
+
+    .page-ttl {
+      margin-bottom: 7.2rem;
+      .ja {
+        padding-left: 24.7rem;
+        &:before {
+          width: 23.3rem;
+        }
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: flex-end;
+      gap: 7.4rem;
+      padding-inline: 5rem 0;
+
+      &:not(:last-child) {
+        margin-bottom: 8rem;
+      }
+
+      .image {
+        width: 72.6rem;
+        flex-shrink: 0;
+      }
+
+      .content {
+        .sub {
+          font-size: 1.7rem;
+          letter-spacing: 0.05em;
+          margin-bottom: -1rem;
+        }
+        .price {
+          font-family: "KozGoPr6N W7", sans-serif;
+          font-size: 5.8rem;
+          letter-spacing: 0.04em;
+          line-height: calc(82 / 58);
+          span {
+            font-size: 3.5rem;
+            letter-spacing: 0.1em;
+          }
+        }
+        .label {
+          display: flex;
+          gap: 2rem;
+          margin-top: -0.3rem;
+          .item {
+            background: #4071d3;
+            border-radius: 1.3rem;
+            min-width: 7.2rem;
+            width: fit-content;
+            padding-inline: 1rem;
+            height: 2.3rem;
+            font-size: 1.4rem;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .voice {
+    padding-block: 11.2rem 25.5rem;
+
+    .page-ttl {
+      text-align: center;
+      margin-bottom: 8.8rem;
+      .ja {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &-box {
+      width: 95.8rem;
+      margin-inline: auto;
+      background: #4071d3;
+      color: #fff;
+      display: flex;
+      gap: 2.8rem;
+      padding: 1.8rem 4.1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 3.6rem;
+      }
+
+      .image {
+        width: 15.5rem;
+        height: 15.5rem;
+        flex-shrink: 0;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+
+      .content {
+        .info {
+          display: flex;
+          gap: 2.7rem;
+          align-items: baseline;
+          margin-bottom: 0.5rem;
+          .attribute {
+            font-family: "KozGoPr6N W5", sans-serif;
+            font-size: 2.7rem;
+            line-height: 1.8;
+            letter-spacing: 0.1em;
+          }
+          .position {
+            font-size: 1.4rem;
+            letter-spacing: 0.1em;
+            line-height: calc(24 / 14);
+          }
+        }
+        .text {
+          font-size: 1.4rem;
+          letter-spacing: 0.1em;
+          line-height: calc(24 / 14);
+        }
+      }
+    }
+  }
+
+  .flow {
+    padding-block: 7.5rem 11rem;
+    background: #eef9ff;
+
+    .page-ttl {
+      margin-bottom: 3.3rem;
+      .ja {
+        padding-left: 14.7rem;
+        &:before {
+          width: 12.3rem;
+        }
+      }
+    }
+
+    &-wrap {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3.9rem;
+    }
+
+    &-item {
+      position: relative;
+      text-align: center;
+      &:not(:last-child) {
+        &:after {
+          content: "";
+          position: absolute;
+          right: -3rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1.9rem;
+          height: 5.3rem;
+          background: url("../images/ic_arrow.png") no-repeat;
+          background-size: cover;
+        }
+      }
+      .step {
+        font-size: 2.1rem;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+        font-family: "KozGoPr6N W5", sans-serif;
+      }
+      .num {
+        position: relative;
+        font-size: 4.7rem;
+        line-height: 1;
+        font-family: "KozGoPr6N W7", sans-serif;
+        letter-spacing: 0.06em;
+        color: #4071d3;
+        margin-bottom: -2.3rem;
+      }
+      .image {
+        width: 18.6rem;
+        height: 18.6rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 1.8rem;
+      }
+      .title {
+        font-size: 2.6rem;
+        font-family: "KozGoPr6N W5", sans-serif;
+        letter-spacing: 0.06em;
+        color: #4071d3;
+      }
+    }
+  }
+
+  .contact {
+    padding-block: 5rem 4.5rem;
+    text-align: center;
+    background: #4071d3;
+    color: #fff;
+
+    &.last {
+      padding-block: 7rem;
+      .contact-ttl {
+        margin-bottom: 1.3rem;
+      }
+    }
+
+    &-ttl {
+      margin-bottom: 3rem;
+      .en {
+        font-size: 10.4rem;
+        line-height: 0.8;
+        font-family: var(--font-komu);
+        letter-spacing: 0.06em;
+        margin-bottom: 2rem;
+      }
+      .ja {
+        font-size: 1.9rem;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+      }
+    }
+    &-phone {
+      margin-left: -3.5rem;
+      a {
+        font-size: 7.3rem;
+        letter-spacing: 0.05em;
+        font-family: var(--font-din);
+        padding-left: 8.5rem;
+        background: url("../images/ic_phone.png") no-repeat left center;
+        background-size: 7.2rem 7.2rem;
+      }
+    }
+  }
+
+  .faq {
+    padding-block: 21.8rem 17.5rem;
+
+    .page-ttl {
+      text-align: center;
+      margin-bottom: 6.2rem;
+      .ja {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &-item {
+      font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+      background: #f5f5f5;
+      padding: 3.5rem 14rem 3.6rem 7.2rem;
+      &:not(:last-child) {
+        margin-bottom: 2.2rem;
+      }
+
+      .question {
+        position: relative;
+        font-size: 2.1rem;
+        letter-spacing: -0.03em;
+        padding-left: 5rem;
+        margin-bottom: 1.5rem;
+        &:before {
+          content: "Q.";
+          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+          position: absolute;
+          top: -0.5rem;
+          left: -1px;
+          font-size: 2.5rem;
+        }
+      }
+
+      .answer {
+        position: relative;
+        font-size: 1.6rem;
+        line-height: calc(27 / 16);
+        letter-spacing: 0.05em;
+        padding-left: 5rem;
+        &:before {
+          content: "A.";
+          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+          position: absolute;
+          top: -0.5rem;
+          left: -1px;
+          font-size: 2.5rem;
+        }
+      }
+    }
+  }
+
+  .company {
+    padding-block: 10rem 26.3rem;
+
+    .page-ttl {
+      text-align: center;
+      margin-bottom: 10.8rem;
+      .ja {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-info {
+      dl {
+        display: flex;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-size: 1.8rem;
+        letter-spacing: 0.08em;
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+        dt {
+          width: 19rem;
+          flex-shrink: 0;
+        }
+      }
+    }
+    &-map {
+      width: 46.9rem;
+      height: 26.5rem;
+      flex-shrink: 0;
+    }
+  }
+}
+
+@include sp {
+  .main {
+    position: relative;
+    padding-top: 8rem;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 8rem;
+      background: #036aa7;
+      opacity: 0.1;
+    }
+  }
+  .page-ttl {
+    margin-bottom: 6.7rem;
+    .en {
+      font-family: var(--font-komu);
+      font-size: 7.9rem;
+      line-height: 0.7;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+      span {
+        color: #4071d3;
+      }
+    }
+    .ja {
+      position: relative;
+      font-size: 1.1rem;
+      padding-left: 16.2rem;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: #222;
+        width: 14.7rem;
+        height: 1px;
+      }
+    }
+    &__sub {
+      font-size: 1.3rem;
+      line-height: calc(21 / 13);
+      letter-spacing: 0.1em;
+      margin-top: 1.4rem;
+    }
+  }
+
+  .mv {
+    position: relative;
+    height: calc(100svh - 8rem);
+    &:after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("../images/bg_mv_sp.png") no-repeat;
+      background-size: cover;
+    }
+
+    &-title {
+      position: absolute;
+      z-index: 5;
+      bottom: 2.5rem;
+      &__bg {
+        display: block;
+        font-size: 3.2rem;
+        width: 30.4rem;
+        padding: 0 2.4rem;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        color: #fff;
+        background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
+        &:not(:last-child) {
+          margin-bottom: 1.8rem;
+        }
+      }
+      &__line {
+        position: relative;
+        padding-left: 14.5rem;
+        margin-top: -1rem;
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 13.5rem;
+          height: 1px;
+          background: #fff;
+        }
+      }
+    }
+  }
+
+  .about {
+    position: relative;
+    padding-block: 13.6rem 10.8rem;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 11.8rem;
+      height: 38.8rem;
+      background: #4071d3;
+      z-index: -1;
+    }
+
+    &-wrap {
+      .about-image {
+        width: 32rem;
+        height: 20.8rem;
+        margin-left: -3rem;
+        margin-bottom: 6rem;
+      }
+
+      .about-content {
+        width: 100%;
+        .title {
+          width: 31.8rem;
+          margin-left: 0.5rem;
+          margin-bottom: 2.3rem;
+        }
+        .text {
+          margin-left: 0.5rem;
+          letter-spacing: 0.1em;
+          font-size: 1.3rem;
+          line-height: calc(21 / 13);
+        }
+      }
+    }
+  }
+
+  .service {
+    position: relative;
+    padding-block: 23.8rem 4.5rem;
+    padding-inline: 3.4rem;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 25rem;
+      background: #f2f2f2;
+    }
+
+    &-content {
+      .title {
+        font-family: "KozGoPr6N W7", sans-serif;
+        font-size: 3.2rem;
+        letter-spacing: 0.1em;
+        line-height: calc(45 / 32);
+        margin-bottom: 2rem;
+      }
+      .text {
+        font-size: 1.3rem;
+        text-align: justify;
+        letter-spacing: 0.1em;
+        line-height: calc(21 / 13);
+      }
+    }
+
+    &-image {
+      width: 32rem;
+      height: 18.5rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .strength {
+    padding-block: 11rem 9.5rem;
+    overflow: hidden;
+    &-title {
+      position: relative;
+      z-index: 2;
+      margin-left: 0.5rem;
+      .ja {
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+      .en {
+        font-family: var(--font-komu);
+        font-size: 6.5rem;
+        line-height: 1;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+        letter-spacing: 0.05em;
+      }
+    }
+    &-wrap {
+      .image {
+        width: 30.4rem;
+        height: 29.9rem;
+        margin-top: -3.7rem;
+        margin-inline: auto;
+        margin-bottom: 4.1rem;
+      }
+
+      .content {
+        padding-inline: 0.8rem;
+        .item {
+          &:not(:last-child) {
+            margin-bottom: 5rem;
+          }
+          &-head {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-left: -0.3rem;
+            margin-bottom: 1.5rem;
+
+            .num {
+              font-family: var(--font-komu);
+              font-size: 3.2rem;
+              width: 5.5rem;
+              height: 5.5rem;
+              flex-shrink: 0;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border: 1px solid #222;
+              border-radius: 50%;
+            }
+            .title {
+              .en {
+                font-family: var(--font-komu);
+                font-size: 1.3rem;
+                color: #4071d3;
+                letter-spacing: 0.1em;
+                line-height: calc(18 / 13);
+              }
+              .ja {
+                font-size: 2rem;
+                letter-spacing: 0.1em;
+                line-height: calc(28 / 20);
+              }
+            }
+          }
+          .text {
+            font-size: 1.3rem;
+            line-height: calc(21 / 13);
+            letter-spacing: 0.1em;
+          }
+        }
+      }
+    }
+  }
+
+  .works {
+    padding-block: 5.5rem;
+
+    .page-ttl {
+      margin-bottom: 4rem;
+      padding-inline: 0.5rem;
+      .ja {
+        padding-left: 12.6rem;
+        &:before {
+          width: 11rem;
+        }
+      }
+    }
+
+    &-item {
+      margin-inline: -0.2rem;
+      &:not(:last-child) {
+        margin-bottom: 7.5rem;
+      }
+
+      .image {
+        margin-bottom: 3.7rem;
+      }
+
+      .content {
+        position: relative;
+        display: flex;
+        gap: 1rem;
+        margin-inline: 1.2rem;
+        .sub {
+          position: absolute;
+          font-size: 1.4rem;
+          letter-spacing: 0.05em;
+          top: -1.6rem;
+          left: 0;
+        }
+        .price {
+          font-family: "KozGoPr6N W7", sans-serif;
+          font-size: 4.5rem;
+          letter-spacing: 0.04em;
+          line-height: 1.2;
+          span {
+            font-size: 2.8rem;
+            letter-spacing: 0.1em;
+          }
+        }
+        .label {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          .item {
+            background: #4071d3;
+            border-radius: 1.3rem;
+            min-width: 6.8rem;
+            width: fit-content;
+            padding-inline: 1rem;
+            height: 2rem;
+            font-size: 1rem;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .voice {
+    padding-block: 9.2rem 19.4rem;
+
+    .page-ttl {
+      text-align: center;
+      margin-bottom: 4.8rem;
+      .ja {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &-box {
+      margin-inline: auto;
+      background: #4071d3;
+      color: #fff;
+      padding: 3.2rem 3.3rem 4.5rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2.9rem;
+      }
+
+      .image {
+        width: 15.5rem;
+        height: 15.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-inline: auto;
+        margin-bottom: 2.8rem;
+      }
+
+      .content {
+        .info {
+          text-align: center;
+          margin-bottom: 2.8rem;
+          .attribute {
+            font-family: "KozGoPr6N W5", sans-serif;
+            font-size: 1.8rem;
+            line-height: 1.5;
+            letter-spacing: 0.1em;
+          }
+          .position {
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            line-height: calc(24 / 14);
+          }
+        }
+        .text {
+          font-size: 1.3rem;
+          letter-spacing: 0.1em;
+          line-height: calc(22 / 13);
+        }
+      }
+    }
+  }
+
+  .flow {
+    position: relative;
+    padding-block: 7.5rem;
+    background: #eef9ff;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 6.5rem;
+      height: 3.7rem;
+      background: url("../images/notice.png") no-repeat;
+      background-size: 100% 100%;
+      right: 4.7rem;
+      bottom: 1rem;
+    }
+    .page-ttl {
+      margin-top: -18.1rem;
+      margin-left: 0.6rem;
+      margin-bottom: 11rem;
+      .ja {
+        padding-left: 7.5rem;
+        &:before {
+          width: 5.7rem;
+        }
+      }
+    }
+
+    &-wrap {
+      margin-inline: -3rem;
+      padding-inline: 4.9rem;
+      overflow: auto;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    &-item {
+      position: relative;
+      text-align: center;
+      padding-inline: 5rem;
+      &:not(:last-child) {
+        &:after {
+          content: "";
+          position: absolute;
+          right: -1rem;
+          top: 48%;
+          transform: translateY(-50%);
+          width: 1.9rem;
+          height: 5.3rem;
+          background: url("../images/ic_arrow.png") no-repeat;
+          background-size: cover;
+        }
+      }
+      .step {
+        font-size: 2.1rem;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        margin-bottom: 1px;
+        font-family: "KozGoPr6N W5", sans-serif;
+      }
+      .num {
+        position: relative;
+        font-size: 4.7rem;
+        line-height: 1;
+        font-family: "KozGoPr6N W7", sans-serif;
+        letter-spacing: 0.06em;
+        color: #4071d3;
+        margin-bottom: -2.3rem;
+      }
+      .image {
+        width: 18.6rem;
+        height: 18.6rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 1.4rem;
+      }
+      .title {
+        font-size: 2.6rem;
+        font-family: "KozGoPr6N W5", sans-serif;
+        letter-spacing: 0.06em;
+        color: #4071d3;
+      }
+    }
+  }
+
+  .contact {
+    padding-block: 3.3rem;
+    text-align: center;
+    background: #4071d3;
+    color: #fff;
+
+    &-ttl {
+      margin-bottom: 2rem;
+      .en {
+        font-size: 7.9rem;
+        line-height: 0.8;
+        font-family: var(--font-komu);
+        letter-spacing: 0.06em;
+        margin-bottom: 0.3rem;
+      }
+      .ja {
+        font-size: 1.5rem;
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+      }
+    }
+    &-phone {
+      a {
+        margin-left: -0.5rem;
+        font-size: 3.8rem;
+        letter-spacing: 0.05em;
+        font-family: var(--font-din);
+        padding-left: 4rem;
+        background: url("../images/ic_phone.png") no-repeat left center;
+        background-size: 3.2rem 3.2rem;
+      }
+    }
+  }
+
+  .faq {
+    padding-block: 7.2rem 0;
+
+    .page-ttl {
+      text-align: center;
+      margin-bottom: 3rem;
+      .en {
+        margin-bottom: 1.2rem;
+      }
+      .ja {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &-item {
+      font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+      background: #f5f5f5;
+      padding: 2.5rem 4.3rem 4.8rem 4.3rem;
+      margin-inline: -3.5rem;
+      &:not(:last-child) {
+        margin-bottom: 3.2rem;
+      }
+
+      .question {
+        position: relative;
+        font-size: 1.6rem;
+        line-height: calc(25 / 16);
+        padding-left: 3.8rem;
+        margin-bottom: 2.3rem;
+        &:before {
+          content: "Q.";
+          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+          position: absolute;
+          top: -0.3rem;
+          left: -1px;
+          font-size: 2rem;
+        }
+      }
+
+      .answer {
+        position: relative;
+        font-size: 1.3rem;
+        line-height: calc(22 / 13);
+        letter-spacing: 0.05em;
+        padding-left: 3.8rem;
+        &:before {
+          content: "A.";
+          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+          position: absolute;
+          top: -0.5rem;
+          left: -1px;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .company {
+    padding-block: 7.8rem 9.6rem;
+
+    .page-ttl {
+      text-align: center;
+      margin-bottom: 3.6rem;
+      .en {
+        margin-bottom: 1.1rem;
+      }
+      .ja {
+        padding-left: 0;
+        &:before {
+          display: none;
+        }
+      }
+    }
+
+    &-info {
+      margin-bottom: 5.4rem;
+      padding-inline: 0.5rem;
+      dl {
+        font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+        &:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+
+        &:not(:last-child) {
+          margin-bottom: 1.7rem;
+        }
+      }
+    }
+    &-map {
+      width: 28.6rem;
+      height: 16.2rem;
+      margin-inline: auto;
+    }
+  }
+}

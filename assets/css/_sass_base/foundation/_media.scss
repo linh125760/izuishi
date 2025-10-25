@@ -1,0 +1,65 @@
+$break-pc: 768px;
+$break-sp: 767px;
+$break-tablet: 1280px;
+$break-pc-medium: 1440px;
+$break-pc-large: 1920px;
+
+@mixin pc-large {
+  @if variable-exists(mediaType) == false {
+    @media print, (min-width: $break-pc-large) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == "pc-large" {
+      @content;
+    }
+  }
+}
+
+@mixin pc-medium {
+  @if variable-exists(mediaType) == false {
+    @media print, (min-width: $break-pc-medium) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == "pc-medium" {
+      @content;
+    }
+  }
+}
+
+@mixin pc {
+  @if variable-exists(mediaType) == false {
+    @media print, (min-width: $break-pc) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == "pc" {
+      @content;
+    }
+  }
+}
+//
+@mixin sp {
+  @if variable-exists(mediaType) == false {
+    @media screen and (max-width: $break-sp) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == "sp" {
+      @content;
+    }
+  }
+}
+
+@mixin tablet {
+  @if variable-exists(mediaType) == false {
+    @media print, (min-width: $break-pc) and (max-width: $break-tablet) {
+      @content;
+    }
+  } @else {
+    @if $mediaType == "tablet" {
+      @content;
+    }
+  }
+}

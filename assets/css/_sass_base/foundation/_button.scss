@@ -1,0 +1,156 @@
+/*  button
+---------------------------------------------------------- */
+.c-btn {
+  --color-bg-btn: #000;
+  --color-white: #fff;
+  --font-size: 3rem;
+  color: var(--color-white);
+  background: var(--color-bg-btn);
+
+  &01 {
+    font-size: 2.6rem;
+    font-weight: 600;
+    color: #fff;
+    background: #00AA4B;
+    min-height: 6.4rem;
+    min-width: 23.6rem;
+    letter-spacing: 0.05em;
+    position: relative;
+    padding: 1rem 1.7rem;
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2);
+    border-radius: 3.2rem;
+    overflow: hidden;
+    line-height: 1.2;
+
+    @include sp {
+      min-width: 12.6rem;
+      min-height: 3.4rem;
+      font-size: 1.3rem;
+      font-weight: 500;
+      border-radius: 1rem;
+      padding: .8rem 1.2rem;
+      gap: .5rem;
+    }
+
+    ._icon {
+      width: 3rem;
+      height: 3rem;
+      display: inline-block;
+
+      @include sp {
+        width: 1.6rem;
+        height: 1.6rem;
+      }
+    }
+
+    &.font-eng {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  &02 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    background: #1A238A;
+    border-radius: 1.4rem;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: 0.02em;
+    color: #FFF648;
+    padding: 0 7.6rem;
+    min-height: 9.7rem;
+    width: 46rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2);
+
+    @include sp {
+      width: 27.7rem;
+      min-height: 5.8rem;
+      font-size: 2rem;
+      padding: 0 4.5rem 0 5rem;
+    }
+
+    &::after {
+      content: "";
+      width: 5.4rem;
+      height: 5.4rem;
+      background: url("../images/ico_arrow_w.png") no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      top: calc(50% - 2.7rem);
+      right: 1.4rem;
+
+      @include sp {
+        width: 3.2rem;
+        height: 3.2rem;
+        top: calc(50% - 1.6rem);
+        right: .9rem;
+      }
+    }
+
+    small {
+      color: #fff;
+      font-size: 3.1rem;
+
+      @include sp {
+        font-size: 1.7rem;
+      }
+    }
+
+    ._icon {
+      width: 4rem;
+      height: 4rem;
+      position: absolute;
+      top: calc(50% - 2rem);
+      left: 2.5rem;
+
+      @include sp {
+        width: 2.6rem;
+        height: 2.6rem;
+        top: calc(50% - 1.3rem);
+        left: 1.5rem;
+      }
+    }
+  }
+
+  &03 {
+    display: inline-block;
+    font-size: 4.4rem;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    padding: 2.5rem 9rem;
+    background: #22AAED;
+    color: #fff;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    width: 69.8rem;
+
+    @include sp {
+      font-size: 2.1rem;
+      padding: 1.8rem 3.1rem;
+      border-radius: .9rem;
+      width: 30.8rem;
+    }
+  }
+}
+
+@include pc {
+  // a[href^="tel:"] {
+  //   pointer-events: none;
+  // }
+
+  a {
+    transition: opacity .2s;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}

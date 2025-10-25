@@ -1,0 +1,2004 @@
+:root {
+  --color-base: #222;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #808080;
+  --color-red: #8d2a15;
+  --color-gold: #c49d30;
+  --bg-sub-base: #ede4e1;
+  --bg-orange: rgb(118, 57, 25);
+  --bg-gradient-orange: linear-gradient(
+    90deg,
+    rgba(118, 57, 25, 1) 0%,
+    rgba(215, 151, 118, 1) 60%,
+    rgba(118, 57, 25, 1) 100%
+  );
+  --bg-btn: linear-gradient(45deg, #763919, #d79776 60%, #763919);
+  --font-komu: "komu-b", sans-serif;
+  --font-din: "din-2014", sans-serif;
+}
+
+@font-face {
+  font-family: "Hiragino Maru Gothic ProN W4";
+  src: url("../fonts/HiraginoMaruGoPr6N_W4.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hiragino Maru Gothic ProN W3";
+  src: url("../fonts/HiraginoMaruGoPr6N_W3.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hiragino Maru Gothic ProN W6";
+  src: url("../fonts/HiraginoMaruGoPr6N_W6.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KozGoPr6N";
+  src: url("../fonts/KozGoPr6N-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KozGoPr6N W5";
+  src: url("../fonts/KozGoPr6N-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KozGoPr6N W7";
+  src: url("../fonts/KozGoPr6N-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --font-weight-regular: 400;
+  --font-weight-semibold: 500;
+  --font-weight-demibold: 600;
+  --font-weight-bold: 700;
+}
+
+html {
+  font-family: "KozGoPr6N", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+@media print, (min-width: 1920px) {
+  html {
+    font-size: 0.5208333333vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 2.5641025641vw;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+legend {
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  --color-base: #222;
+  --color-bg-base: #fff;
+  --font-weight-normal: 400;
+  font-family: "KozGoPr6N", sans-serif;
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-normal);
+  color: var(--color-base);
+  background: var(--color-bg-base);
+  line-height: 1.875;
+}
+@media print, (min-width: 768px) {
+  body {
+    --screen-pc-min: 128rem;
+    min-width: var(--screen-pc-min);
+    line-height: 1.5;
+  }
+}
+
+img {
+  height: auto;
+  vertical-align: top;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.js-fade {
+  transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), translate 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.js-fade.fadeIn {
+  opacity: 0;
+}
+.js-fade.fadeIn.in {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+.js-fade.fadeUp {
+  translate: 0 50%;
+  opacity: 0;
+}
+.js-fade.fadeUp.in {
+  animation: fadeUp;
+}
+.js-fade.fadeDown {
+  translate: 0 -50%;
+  opacity: 0;
+}
+.js-fade.fadeDown.in {
+  animation: fadeDown;
+}
+.js-fade.fadeLeft {
+  translate: -50% 0;
+  opacity: 0;
+}
+.js-fade.fadeLeft.in {
+  animation: fadeLeft;
+}
+.js-fade.fadeRight {
+  translate: 50% 0;
+  opacity: 0;
+}
+.js-fade.fadeRight.in {
+  animation: fadeRight;
+}
+.js-fade.fadeBg::before {
+  opacity: 0;
+}
+.js-fade.fadeBg.in::before {
+  animation: fadeIn;
+}
+.js-fade__in, .js-fade.fadeIn.in, .js-fade.fadeUp.in, .js-fade.fadeDown.in, .js-fade.fadeLeft.in, .js-fade.fadeRight.in, .js-fade.fadeBg.in::before {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}
+@media print, (min-width: 768px) {
+  .js-fade.in.delay-01 {
+    animation-delay: 0.25s;
+  }
+  .js-fade.in.delay-02 {
+    animation-delay: 0.5s;
+  }
+  .js-fade.in.delay-03 {
+    animation-delay: 0.75s;
+  }
+  .js-fade.in.delay-04 {
+    animation-delay: 1s;
+  }
+  .js-fade.in.delay-05 {
+    animation-delay: 1.25s;
+  }
+  .js-fade.in.delay-06 {
+    animation-delay: 1.5s;
+  }
+  .js-fade.in.delay-07 {
+    animation-delay: 1.75s;
+  }
+  .js-fade.in.delay-08 {
+    animation-delay: 2s;
+  }
+}
+
+.move-light::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: radial-gradient(hsla(54, 70%, 90%, 0) 0%, hsla(54, 70%, 90%, 0.4) 55%, hsla(8, 79%, 90%, 0.45) 70%, hsla(8, 79%, 90%, 0) 80%, hsla(8, 79%, 90%, 0) 100%);
+  background-repeat: no-repeat;
+  background-position: 120% 120%;
+  background-size: 500% 500%;
+  mix-blend-mode: hard-light;
+}
+.move-light.in::after {
+  animation: move-light 1500ms 300ms ease-out forwards, move-light-opacity 1500ms 300ms forwards;
+  animation-delay: 2s;
+}
+
+.text-light.in {
+  animation: text-light 3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeUp {
+  from {
+    translate: 0 50%;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeDown {
+  from {
+    translate: 0 -50%;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeRight {
+  from {
+    translate: 50% 0;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes fadeLeft {
+  from {
+    translate: -50% 0;
+    opacity: 0;
+  }
+  to {
+    translate: 0 0;
+    opacity: 1;
+  }
+}
+@keyframes move-light {
+  from {
+    background-position: 150% 100%;
+  }
+  to {
+    background-position: 50% 50%;
+  }
+}
+@keyframes move-light-up {
+  from {
+    background-position: 120% 0%;
+  }
+  to {
+    background-position: 50% 50%;
+  }
+}
+@keyframes move-light-opacity {
+  50% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes text-light {
+  from {
+    background-position: 100% 50%;
+  }
+  to {
+    background-position: 0% 50%;
+  }
+}
+@keyframes text-color-w {
+  from {
+    color: rgba(255, 255, 255, 0);
+  }
+  to {
+    color: rgb(255, 255, 255);
+  }
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+[data-animation^=fade-in]:not(.animated) {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/*  button
+---------------------------------------------------------- */
+.c-btn {
+  --color-bg-btn: #000;
+  --color-white: #fff;
+  --font-size: 3rem;
+  color: var(--color-white);
+  background: var(--color-bg-btn);
+}
+.c-btn01 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #fff;
+  background: #00AA4B;
+  min-height: 6.4rem;
+  min-width: 23.6rem;
+  letter-spacing: 0.05em;
+  position: relative;
+  padding: 1rem 1.7rem;
+  display: inline-flex;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 3.2rem;
+  overflow: hidden;
+  line-height: 1.2;
+}
+@media screen and (max-width: 767px) {
+  .c-btn01 {
+    min-width: 12.6rem;
+    min-height: 3.4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    padding: 0.8rem 1.2rem;
+    gap: 0.5rem;
+  }
+}
+.c-btn01 ._icon {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .c-btn01 ._icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+}
+.c-btn01.font-eng {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.c-btn02 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: #1A238A;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  position: relative;
+  letter-spacing: 0.02em;
+  color: #FFF648;
+  padding: 0 7.6rem;
+  min-height: 9.7rem;
+  width: 46rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 767px) {
+  .c-btn02 {
+    width: 27.7rem;
+    min-height: 5.8rem;
+    font-size: 2rem;
+    padding: 0 4.5rem 0 5rem;
+  }
+}
+.c-btn02::after {
+  content: "";
+  width: 5.4rem;
+  height: 5.4rem;
+  background: url("../images/ico_arrow_w.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: calc(50% - 2.7rem);
+  right: 1.4rem;
+}
+@media screen and (max-width: 767px) {
+  .c-btn02::after {
+    width: 3.2rem;
+    height: 3.2rem;
+    top: calc(50% - 1.6rem);
+    right: 0.9rem;
+  }
+}
+.c-btn02 small {
+  color: #fff;
+  font-size: 3.1rem;
+}
+@media screen and (max-width: 767px) {
+  .c-btn02 small {
+    font-size: 1.7rem;
+  }
+}
+.c-btn02 ._icon {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: calc(50% - 2rem);
+  left: 2.5rem;
+}
+@media screen and (max-width: 767px) {
+  .c-btn02 ._icon {
+    width: 2.6rem;
+    height: 2.6rem;
+    top: calc(50% - 1.3rem);
+    left: 1.5rem;
+  }
+}
+.c-btn03 {
+  display: inline-block;
+  font-size: 4.4rem;
+  font-weight: 600;
+  letter-spacing: 0.07rem;
+  text-align: center;
+  padding: 2.5rem 9rem;
+  background: #22AAED;
+  color: #fff;
+  border-radius: 2.5rem;
+  overflow: hidden;
+  width: 69.8rem;
+}
+@media screen and (max-width: 767px) {
+  .c-btn03 {
+    font-size: 2.1rem;
+    padding: 1.8rem 3.1rem;
+    border-radius: 0.9rem;
+    width: 30.8rem;
+  }
+}
+
+@media print, (min-width: 768px) {
+  a {
+    transition: opacity 0.2s;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+}
+@media print, (min-width: 768px) {
+  .footer {
+    background: #4071d3;
+    padding: 4.3rem 0 7rem;
+    position: relative;
+    color: #fff;
+    z-index: 12;
+    margin-top: -0.2rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+  }
+  .footer .logo {
+    display: block;
+    width: 22.3rem;
+    height: 5.4rem;
+    margin-bottom: 2.3rem;
+  }
+  .footer p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-top: -1px;
+    background: #4071d3;
+    padding: 0.4rem 0.5rem 5rem;
+    position: relative;
+    color: #fff;
+    z-index: 12;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+  }
+  .footer .logo {
+    display: block;
+    width: 15.4rem;
+    height: 3.8rem;
+    margin-bottom: 1rem;
+  }
+  .footer p {
+    font-size: 1.2rem;
+  }
+}
+@media print, (min-width: 768px) {
+  .header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-width: 1280px;
+    z-index: 6;
+    padding: 2rem 5rem;
+    transition: background 0.3s;
+  }
+  .header.is-fixed {
+    background: linear-gradient(180deg, rgba(3, 106, 167, 0.7) 0%, rgba(31, 65, 142, 0.7) 100%);
+  }
+  .header.is-fixed .logo {
+    opacity: 1;
+    visibility: visible;
+  }
+  .header .logo {
+    width: 223px;
+    height: 54px;
+    flex-shrink: 0;
+    margin-right: 80px;
+  }
+  .header .header-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 36px;
+    transform: translateX(-5px);
+  }
+  .header .header-menu a {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+  }
+  .header .header-menu a.btn-contact {
+    position: relative;
+    transform: translateX(-8px);
+    color: #004b71;
+    width: 170px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #fff;
+    background: #fff;
+    border-radius: 100px;
+    padding-inline: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    height: 8rem;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(3, 106, 167, 0.7) 0%, rgba(31, 65, 142, 0.7) 100%);
+  }
+  .header .logo {
+    position: fixed;
+    top: 2.1rem;
+    left: 11.6rem;
+    width: 15.8rem;
+    height: 3.8rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  .header .hamburger {
+    display: flex;
+    position: absolute;
+    top: 2.8rem;
+    right: 5.2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.1rem;
+    height: 2.4rem;
+    z-index: 1001;
+  }
+  .header .hamburger span {
+    height: 1px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  .header .hamburger span:nth-child(1), .header .hamburger span:nth-child(3) {
+    width: 3.3rem;
+  }
+  .header .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(0.8rem, 0.8rem);
+  }
+  .header .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .header .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(0.8rem, -0.8rem);
+  }
+  .header .header-menu {
+    position: fixed;
+    width: 19rem;
+    height: auto;
+    top: 8rem;
+    right: -100vw;
+    background: rgba(25, 53, 109, 0.8);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem 4rem;
+    gap: 1.5rem;
+    list-style: none;
+    z-index: 1000;
+    transition: all 0.3s;
+  }
+  .header .header-menu.active {
+    right: 0;
+  }
+  .header .header-menu li {
+    text-align: left;
+  }
+  .header .header-menu a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pc-only {
+    display: none !important;
+  }
+}
+
+@media print, (min-width: 768px) {
+  .sp-only {
+    display: none !important;
+  }
+}
+
+.db {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media print, (min-width: 768px) {
+  .db_pc {
+    display: block !important;
+  }
+}
+.wrap {
+  width: 100%;
+  padding: 0 1rem;
+  margin: auto;
+}
+@media print, (min-width: 768px) {
+  .wrap {
+    max-width: 112.8rem;
+    padding: 0 4rem;
+  }
+}
+
+.row {
+  width: 100%;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+@media print, (min-width: 768px) {
+  .row {
+    max-width: 1128px;
+  }
+}
+
+.fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media print, (min-width: 768px) {
+  .page-ttl {
+    margin-bottom: 5.6rem;
+  }
+  .page-ttl .en {
+    font-family: var(--font-komu);
+    font-size: 14rem;
+    line-height: 0.7;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+  }
+  .page-ttl .en span {
+    color: #4071d3;
+  }
+  .page-ttl .ja {
+    position: relative;
+    font-size: 1.6rem;
+    padding-left: 29.9rem;
+  }
+  .page-ttl .ja:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: #222;
+    width: 28.7rem;
+    height: 1px;
+  }
+  .page-ttl__sub {
+    margin-top: 1.4rem;
+    line-height: 1.9375;
+    letter-spacing: 0.1em;
+  }
+  .mv {
+    position: relative;
+    height: 96.9rem;
+    height: 100svh;
+  }
+  .mv:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/bg_mv.png") no-repeat;
+    background-size: cover;
+  }
+  .mv-title {
+    position: absolute;
+    z-index: 5;
+    left: 18rem;
+    top: 53%;
+    transform: translateY(-50%);
+  }
+  .mv-title__bg {
+    display: block;
+    font-size: 5.5rem;
+    letter-spacing: -0.05em;
+    padding: 0.8rem 4.6rem 0.8rem;
+    width: 51.1rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    color: #fff;
+    background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
+  }
+  .mv-title__bg:not(:last-child) {
+    margin-bottom: 3.3rem;
+  }
+  .mv-title__line {
+    position: relative;
+    padding-left: 23.3rem;
+    margin-top: -0.5rem;
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+  }
+  .mv-title__line:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 21.8rem;
+    height: 1px;
+    background: #fff;
+  }
+  .about {
+    position: relative;
+    padding-block: 24rem;
+  }
+  .about:after {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    top: 0;
+    width: 36.8rem;
+    height: 75.4rem;
+    background: #4071d3;
+    z-index: -1;
+  }
+  .about-wrap {
+    display: flex;
+    align-items: center;
+    padding-inline: 2.5rem;
+  }
+  .about-wrap .about-image {
+    width: 48.5rem;
+    height: 31.5rem;
+    flex-shrink: 0;
+    margin-right: 5.5rem;
+  }
+  .about-wrap .about-content {
+    width: 100%;
+  }
+  .about-wrap .about-content .title {
+    width: 52.4rem;
+    margin-bottom: 5.7rem;
+  }
+  .about-wrap .about-content .text {
+    margin-left: 0.5rem;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    font-size: 1.6rem;
+    line-height: 1.9375;
+  }
+  .service {
+    position: relative;
+    padding-block: 12.8rem 6.4rem;
+  }
+  .service:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 36rem;
+    background: #f2f2f2;
+  }
+  .service-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .service-content {
+    width: 27.1875vw;
+    min-width: 51rem;
+    flex-shrink: 0;
+    margin-right: 9.4rem;
+  }
+  .service-content .title {
+    font-family: "KozGoPr6N W7", sans-serif;
+    font-size: 3.2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.40625;
+    margin-bottom: 1.7rem;
+  }
+  .service-content .text {
+    letter-spacing: 0.1em;
+    line-height: 1.9375;
+  }
+  .service-image {
+    margin-top: -0.6rem;
+    width: 46.25vw;
+    height: 23.4895833333vw;
+    min-width: 59rem;
+    min-height: 35rem;
+  }
+  .service-image img {
+    object-position: left;
+  }
+  .strength {
+    padding-block: 20rem;
+  }
+  .strength-title {
+    margin-bottom: 3rem;
+  }
+  .strength-title .ja {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 6.5rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+  .strength-title .en {
+    font-family: var(--font-komu);
+    font-size: 14rem;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 0.05em;
+  }
+  .strength-wrap {
+    display: flex;
+  }
+  .strength-wrap .image {
+    width: 46.4rem;
+    height: 60.5rem;
+    flex-shrink: 0;
+    margin-right: 3.5rem;
+  }
+  .strength-wrap .content {
+    margin-top: 3.9rem;
+  }
+  .strength-wrap .content .item:not(:last-child) {
+    margin-bottom: 7.8rem;
+  }
+  .strength-wrap .content .item-head {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  .strength-wrap .content .item-head .num {
+    font-family: var(--font-komu);
+    font-size: 4.9rem;
+    width: 8.4rem;
+    height: 8.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #222;
+    border-radius: 50%;
+  }
+  .strength-wrap .content .item-head .title .en {
+    font-family: var(--font-komu);
+    font-size: 2rem;
+    color: #4071d3;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+  }
+  .strength-wrap .content .item-head .title .ja {
+    font-size: 3.2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.40625;
+  }
+  .strength-wrap .content .item .text {
+    margin-top: -0.5rem;
+    padding-left: 10.8rem;
+    font-size: 1.6rem;
+    line-height: 1.9375;
+    letter-spacing: 0.1em;
+  }
+  .works {
+    padding-block: 6.2rem 15rem;
+  }
+  .works .page-ttl {
+    margin-bottom: 7.2rem;
+  }
+  .works .page-ttl .ja {
+    padding-left: 24.7rem;
+  }
+  .works .page-ttl .ja:before {
+    width: 23.3rem;
+  }
+  .works-item {
+    display: flex;
+    align-items: flex-end;
+    gap: 7.4rem;
+    padding-inline: 5rem 0;
+  }
+  .works-item:not(:last-child) {
+    margin-bottom: 8rem;
+  }
+  .works-item .image {
+    width: 72.6rem;
+    flex-shrink: 0;
+  }
+  .works-item .content .sub {
+    font-size: 1.7rem;
+    letter-spacing: 0.05em;
+    margin-bottom: -1rem;
+  }
+  .works-item .content .price {
+    font-family: "KozGoPr6N W7", sans-serif;
+    font-size: 5.8rem;
+    letter-spacing: 0.04em;
+    line-height: 1.4137931034;
+  }
+  .works-item .content .price span {
+    font-size: 3.5rem;
+    letter-spacing: 0.1em;
+  }
+  .works-item .content .label {
+    display: flex;
+    gap: 2rem;
+    margin-top: -0.3rem;
+  }
+  .works-item .content .label .item {
+    background: #4071d3;
+    border-radius: 1.3rem;
+    min-width: 7.2rem;
+    width: fit-content;
+    padding-inline: 1rem;
+    height: 2.3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .voice {
+    padding-block: 11.2rem 25.5rem;
+  }
+  .voice .page-ttl {
+    text-align: center;
+    margin-bottom: 8.8rem;
+  }
+  .voice .page-ttl .ja {
+    padding-left: 0;
+  }
+  .voice .page-ttl .ja:before {
+    display: none;
+  }
+  .voice-box {
+    width: 95.8rem;
+    margin-inline: auto;
+    background: #4071d3;
+    color: #fff;
+    display: flex;
+    gap: 2.8rem;
+    padding: 1.8rem 4.1rem;
+  }
+  .voice-box:not(:last-child) {
+    margin-bottom: 3.6rem;
+  }
+  .voice-box .image {
+    width: 15.5rem;
+    height: 15.5rem;
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .voice-box .content .info {
+    display: flex;
+    gap: 2.7rem;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+  }
+  .voice-box .content .info .attribute {
+    font-family: "KozGoPr6N W5", sans-serif;
+    font-size: 2.7rem;
+    line-height: 1.8;
+    letter-spacing: 0.1em;
+  }
+  .voice-box .content .info .position {
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7142857143;
+  }
+  .voice-box .content .text {
+    font-size: 1.4rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7142857143;
+  }
+  .flow {
+    padding-block: 7.5rem 11rem;
+    background: #eef9ff;
+  }
+  .flow .page-ttl {
+    margin-bottom: 3.3rem;
+  }
+  .flow .page-ttl .ja {
+    padding-left: 14.7rem;
+  }
+  .flow .page-ttl .ja:before {
+    width: 12.3rem;
+  }
+  .flow-wrap {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3.9rem;
+  }
+  .flow-item {
+    position: relative;
+    text-align: center;
+  }
+  .flow-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -3rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.9rem;
+    height: 5.3rem;
+    background: url("../images/ic_arrow.png") no-repeat;
+    background-size: cover;
+  }
+  .flow-item .step {
+    font-size: 2.1rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    font-family: "KozGoPr6N W5", sans-serif;
+  }
+  .flow-item .num {
+    position: relative;
+    font-size: 4.7rem;
+    line-height: 1;
+    font-family: "KozGoPr6N W7", sans-serif;
+    letter-spacing: 0.06em;
+    color: #4071d3;
+    margin-bottom: -2.3rem;
+  }
+  .flow-item .image {
+    width: 18.6rem;
+    height: 18.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.8rem;
+  }
+  .flow-item .title {
+    font-size: 2.6rem;
+    font-family: "KozGoPr6N W5", sans-serif;
+    letter-spacing: 0.06em;
+    color: #4071d3;
+  }
+  .contact {
+    padding-block: 5rem 4.5rem;
+    text-align: center;
+    background: #4071d3;
+    color: #fff;
+  }
+  .contact.last {
+    padding-block: 7rem;
+  }
+  .contact.last .contact-ttl {
+    margin-bottom: 1.3rem;
+  }
+  .contact-ttl {
+    margin-bottom: 3rem;
+  }
+  .contact-ttl .en {
+    font-size: 10.4rem;
+    line-height: 0.8;
+    font-family: var(--font-komu);
+    letter-spacing: 0.06em;
+    margin-bottom: 2rem;
+  }
+  .contact-ttl .ja {
+    font-size: 1.9rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+  }
+  .contact-phone {
+    margin-left: -3.5rem;
+  }
+  .contact-phone a {
+    font-size: 7.3rem;
+    letter-spacing: 0.05em;
+    font-family: var(--font-din);
+    padding-left: 8.5rem;
+    background: url("../images/ic_phone.png") no-repeat left center;
+    background-size: 7.2rem 7.2rem;
+  }
+  .faq {
+    padding-block: 21.8rem 17.5rem;
+  }
+  .faq .page-ttl {
+    text-align: center;
+    margin-bottom: 6.2rem;
+  }
+  .faq .page-ttl .ja {
+    padding-left: 0;
+  }
+  .faq .page-ttl .ja:before {
+    display: none;
+  }
+  .faq-item {
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    background: #f5f5f5;
+    padding: 3.5rem 14rem 3.6rem 7.2rem;
+  }
+  .faq-item:not(:last-child) {
+    margin-bottom: 2.2rem;
+  }
+  .faq-item .question {
+    position: relative;
+    font-size: 2.1rem;
+    letter-spacing: -0.03em;
+    padding-left: 5rem;
+    margin-bottom: 1.5rem;
+  }
+  .faq-item .question:before {
+    content: "Q.";
+    font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+    position: absolute;
+    top: -0.5rem;
+    left: -1px;
+    font-size: 2.5rem;
+  }
+  .faq-item .answer {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.6875;
+    letter-spacing: 0.05em;
+    padding-left: 5rem;
+  }
+  .faq-item .answer:before {
+    content: "A.";
+    font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+    position: absolute;
+    top: -0.5rem;
+    left: -1px;
+    font-size: 2.5rem;
+  }
+  .company {
+    padding-block: 10rem 26.3rem;
+  }
+  .company .page-ttl {
+    text-align: center;
+    margin-bottom: 10.8rem;
+  }
+  .company .page-ttl .ja {
+    padding-left: 0;
+  }
+  .company .page-ttl .ja:before {
+    display: none;
+  }
+  .company-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .company-info dl {
+    display: flex;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 0.08em;
+  }
+  .company-info dl:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .company-info dl dt {
+    width: 19rem;
+    flex-shrink: 0;
+  }
+  .company-map {
+    width: 46.9rem;
+    height: 26.5rem;
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    position: relative;
+    padding-top: 8rem;
+  }
+  .main:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8rem;
+    background: #036aa7;
+    opacity: 0.1;
+  }
+  .page-ttl {
+    margin-bottom: 6.7rem;
+  }
+  .page-ttl .en {
+    font-family: var(--font-komu);
+    font-size: 7.9rem;
+    line-height: 0.7;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+  }
+  .page-ttl .en span {
+    color: #4071d3;
+  }
+  .page-ttl .ja {
+    position: relative;
+    font-size: 1.1rem;
+    padding-left: 16.2rem;
+  }
+  .page-ttl .ja:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    background: #222;
+    width: 14.7rem;
+    height: 1px;
+  }
+  .page-ttl__sub {
+    font-size: 1.3rem;
+    line-height: 1.6153846154;
+    letter-spacing: 0.1em;
+    margin-top: 1.4rem;
+  }
+  .mv {
+    position: relative;
+    height: calc(100svh - 8rem);
+  }
+  .mv:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../images/bg_mv_sp.png") no-repeat;
+    background-size: cover;
+  }
+  .mv-title {
+    position: absolute;
+    z-index: 5;
+    bottom: 2.5rem;
+  }
+  .mv-title__bg {
+    display: block;
+    font-size: 3.2rem;
+    width: 30.4rem;
+    padding: 0 2.4rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    color: #fff;
+    background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
+  }
+  .mv-title__bg:not(:last-child) {
+    margin-bottom: 1.8rem;
+  }
+  .mv-title__line {
+    position: relative;
+    padding-left: 14.5rem;
+    margin-top: -1rem;
+    color: #fff;
+    font-size: 1.3rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+  }
+  .mv-title__line:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 13.5rem;
+    height: 1px;
+    background: #fff;
+  }
+  .about {
+    position: relative;
+    padding-block: 13.6rem 10.8rem;
+  }
+  .about:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 11.8rem;
+    height: 38.8rem;
+    background: #4071d3;
+    z-index: -1;
+  }
+  .about-wrap .about-image {
+    width: 32rem;
+    height: 20.8rem;
+    margin-left: -3rem;
+    margin-bottom: 6rem;
+  }
+  .about-wrap .about-content {
+    width: 100%;
+  }
+  .about-wrap .about-content .title {
+    width: 31.8rem;
+    margin-left: 0.5rem;
+    margin-bottom: 2.3rem;
+  }
+  .about-wrap .about-content .text {
+    margin-left: 0.5rem;
+    letter-spacing: 0.1em;
+    font-size: 1.3rem;
+    line-height: 1.6153846154;
+  }
+  .service {
+    position: relative;
+    padding-block: 23.8rem 4.5rem;
+    padding-inline: 3.4rem;
+  }
+  .service:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25rem;
+    background: #f2f2f2;
+  }
+  .service-content .title {
+    font-family: "KozGoPr6N W7", sans-serif;
+    font-size: 3.2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.40625;
+    margin-bottom: 2rem;
+  }
+  .service-content .text {
+    font-size: 1.3rem;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    line-height: 1.6153846154;
+  }
+  .service-image {
+    width: 32rem;
+    height: 18.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .strength {
+    padding-block: 11rem 9.5rem;
+    overflow: hidden;
+  }
+  .strength-title {
+    position: relative;
+    z-index: 2;
+    margin-left: 0.5rem;
+  }
+  .strength-title .ja {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+  .strength-title .en {
+    font-family: var(--font-komu);
+    font-size: 6.5rem;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    letter-spacing: 0.05em;
+  }
+  .strength-wrap .image {
+    width: 30.4rem;
+    height: 29.9rem;
+    margin-top: -3.7rem;
+    margin-inline: auto;
+    margin-bottom: 4.1rem;
+  }
+  .strength-wrap .content {
+    padding-inline: 0.8rem;
+  }
+  .strength-wrap .content .item:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+  .strength-wrap .content .item-head {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-left: -0.3rem;
+    margin-bottom: 1.5rem;
+  }
+  .strength-wrap .content .item-head .num {
+    font-family: var(--font-komu);
+    font-size: 3.2rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #222;
+    border-radius: 50%;
+  }
+  .strength-wrap .content .item-head .title .en {
+    font-family: var(--font-komu);
+    font-size: 1.3rem;
+    color: #4071d3;
+    letter-spacing: 0.1em;
+    line-height: 1.3846153846;
+  }
+  .strength-wrap .content .item-head .title .ja {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.4;
+  }
+  .strength-wrap .content .item .text {
+    font-size: 1.3rem;
+    line-height: 1.6153846154;
+    letter-spacing: 0.1em;
+  }
+  .works {
+    padding-block: 5.5rem;
+  }
+  .works .page-ttl {
+    margin-bottom: 4rem;
+    padding-inline: 0.5rem;
+  }
+  .works .page-ttl .ja {
+    padding-left: 12.6rem;
+  }
+  .works .page-ttl .ja:before {
+    width: 11rem;
+  }
+  .works-item {
+    margin-inline: -0.2rem;
+  }
+  .works-item:not(:last-child) {
+    margin-bottom: 7.5rem;
+  }
+  .works-item .image {
+    margin-bottom: 3.7rem;
+  }
+  .works-item .content {
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    margin-inline: 1.2rem;
+  }
+  .works-item .content .sub {
+    position: absolute;
+    font-size: 1.4rem;
+    letter-spacing: 0.05em;
+    top: -1.6rem;
+    left: 0;
+  }
+  .works-item .content .price {
+    font-family: "KozGoPr6N W7", sans-serif;
+    font-size: 4.5rem;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+  }
+  .works-item .content .price span {
+    font-size: 2.8rem;
+    letter-spacing: 0.1em;
+  }
+  .works-item .content .label {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .works-item .content .label .item {
+    background: #4071d3;
+    border-radius: 1.3rem;
+    min-width: 6.8rem;
+    width: fit-content;
+    padding-inline: 1rem;
+    height: 2rem;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .voice {
+    padding-block: 9.2rem 19.4rem;
+  }
+  .voice .page-ttl {
+    text-align: center;
+    margin-bottom: 4.8rem;
+  }
+  .voice .page-ttl .ja {
+    padding-left: 0;
+  }
+  .voice .page-ttl .ja:before {
+    display: none;
+  }
+  .voice-box {
+    margin-inline: auto;
+    background: #4071d3;
+    color: #fff;
+    padding: 3.2rem 3.3rem 4.5rem;
+  }
+  .voice-box:not(:last-child) {
+    margin-bottom: 2.9rem;
+  }
+  .voice-box .image {
+    width: 15.5rem;
+    height: 15.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-inline: auto;
+    margin-bottom: 2.8rem;
+  }
+  .voice-box .content .info {
+    text-align: center;
+    margin-bottom: 2.8rem;
+  }
+  .voice-box .content .info .attribute {
+    font-family: "KozGoPr6N W5", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+  }
+  .voice-box .content .info .position {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+    line-height: 1.7142857143;
+  }
+  .voice-box .content .text {
+    font-size: 1.3rem;
+    letter-spacing: 0.1em;
+    line-height: 1.6923076923;
+  }
+  .flow {
+    position: relative;
+    padding-block: 7.5rem;
+    background: #eef9ff;
+  }
+  .flow:after {
+    content: "";
+    position: absolute;
+    width: 6.5rem;
+    height: 3.7rem;
+    background: url("../images/notice.png") no-repeat;
+    background-size: 100% 100%;
+    right: 4.7rem;
+    bottom: 1rem;
+  }
+  .flow .page-ttl {
+    margin-top: -18.1rem;
+    margin-left: 0.6rem;
+    margin-bottom: 11rem;
+  }
+  .flow .page-ttl .ja {
+    padding-left: 7.5rem;
+  }
+  .flow .page-ttl .ja:before {
+    width: 5.7rem;
+  }
+  .flow-wrap {
+    margin-inline: -3rem;
+    padding-inline: 4.9rem;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    scrollbar-width: none;
+  }
+  .flow-wrap::-webkit-scrollbar {
+    display: none;
+  }
+  .flow-item {
+    position: relative;
+    text-align: center;
+    padding-inline: 5rem;
+  }
+  .flow-item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: -1rem;
+    top: 48%;
+    transform: translateY(-50%);
+    width: 1.9rem;
+    height: 5.3rem;
+    background: url("../images/ic_arrow.png") no-repeat;
+    background-size: cover;
+  }
+  .flow-item .step {
+    font-size: 2.1rem;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    margin-bottom: 1px;
+    font-family: "KozGoPr6N W5", sans-serif;
+  }
+  .flow-item .num {
+    position: relative;
+    font-size: 4.7rem;
+    line-height: 1;
+    font-family: "KozGoPr6N W7", sans-serif;
+    letter-spacing: 0.06em;
+    color: #4071d3;
+    margin-bottom: -2.3rem;
+  }
+  .flow-item .image {
+    width: 18.6rem;
+    height: 18.6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.4rem;
+  }
+  .flow-item .title {
+    font-size: 2.6rem;
+    font-family: "KozGoPr6N W5", sans-serif;
+    letter-spacing: 0.06em;
+    color: #4071d3;
+  }
+  .contact {
+    padding-block: 3.3rem;
+    text-align: center;
+    background: #4071d3;
+    color: #fff;
+  }
+  .contact-ttl {
+    margin-bottom: 2rem;
+  }
+  .contact-ttl .en {
+    font-size: 7.9rem;
+    line-height: 0.8;
+    font-family: var(--font-komu);
+    letter-spacing: 0.06em;
+    margin-bottom: 0.3rem;
+  }
+  .contact-ttl .ja {
+    font-size: 1.5rem;
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+  }
+  .contact-phone a {
+    margin-left: -0.5rem;
+    font-size: 3.8rem;
+    letter-spacing: 0.05em;
+    font-family: var(--font-din);
+    padding-left: 4rem;
+    background: url("../images/ic_phone.png") no-repeat left center;
+    background-size: 3.2rem 3.2rem;
+  }
+  .faq {
+    padding-block: 7.2rem 0;
+  }
+  .faq .page-ttl {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .faq .page-ttl .en {
+    margin-bottom: 1.2rem;
+  }
+  .faq .page-ttl .ja {
+    padding-left: 0;
+  }
+  .faq .page-ttl .ja:before {
+    display: none;
+  }
+  .faq-item {
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    background: #f5f5f5;
+    padding: 2.5rem 4.3rem 4.8rem 4.3rem;
+    margin-inline: -3.5rem;
+  }
+  .faq-item:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+  .faq-item .question {
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.5625;
+    padding-left: 3.8rem;
+    margin-bottom: 2.3rem;
+  }
+  .faq-item .question:before {
+    content: "Q.";
+    font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+    position: absolute;
+    top: -0.3rem;
+    left: -1px;
+    font-size: 2rem;
+  }
+  .faq-item .answer {
+    position: relative;
+    font-size: 1.3rem;
+    line-height: 1.6923076923;
+    letter-spacing: 0.05em;
+    padding-left: 3.8rem;
+  }
+  .faq-item .answer:before {
+    content: "A.";
+    font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+    position: absolute;
+    top: -0.5rem;
+    left: -1px;
+    font-size: 2rem;
+  }
+  .company {
+    padding-block: 7.8rem 9.6rem;
+  }
+  .company .page-ttl {
+    text-align: center;
+    margin-bottom: 3.6rem;
+  }
+  .company .page-ttl .en {
+    margin-bottom: 1.1rem;
+  }
+  .company .page-ttl .ja {
+    padding-left: 0;
+  }
+  .company .page-ttl .ja:before {
+    display: none;
+  }
+  .company-info {
+    margin-bottom: 5.4rem;
+    padding-inline: 0.5rem;
+  }
+  .company-info dl {
+    font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.08em;
+  }
+  .company-info dl:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .company-info dl:not(:last-child) {
+    margin-bottom: 1.7rem;
+  }
+  .company-map {
+    width: 28.6rem;
+    height: 16.2rem;
+    margin-inline: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+.pc-only {
+  @include sp {
+    display: none !important;
+  }
+}
+
+.sp-only {
+  @include pc {
+    display: none !important;
+  }
+}
+
+.db {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+@include pc {
+  .db_pc {
+    display: block !important;
+  }
+}
+
+.wrap {
+  width: 100%;
+  padding: 0 1rem;
+  margin: auto;
+
+  @include pc {
+    max-width: 112.8rem;
+    padding: 0 4rem;
+  }
+}
+
+.row {
+  width: 100%;
+  padding: 0 3rem;
+  margin: 0 auto;
+
+  @include pc {
+    max-width: 1128px;
+  }
+}
+
+.fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,227 @@
+
+
+.js-fade {
+  transition: $effect;
+  &.fade {
+
+    &In {
+      opacity: 0;
+
+      &.in {
+        animation: fadeIn;
+        @extend .js-fade__in;
+        animation-duration: 2s;
+      }
+    }
+
+    &Up {
+      translate: 0 50%;
+      opacity: 0;
+
+      &.in {
+        animation: fadeUp;
+        @extend .js-fade__in;
+      }
+    }
+
+    &Down {
+      translate: 0 -50%;
+      opacity: 0;
+
+      &.in {
+        animation: fadeDown;
+        @extend .js-fade__in;
+      }
+    }
+
+    &Left {
+      translate: -50% 0;
+      opacity: 0;
+
+      &.in {
+        animation: fadeLeft;
+        @extend .js-fade__in;
+      }
+    }
+
+    &Right {
+      translate: 50% 0;
+      opacity: 0;
+
+      &.in {
+        animation: fadeRight;
+        @extend .js-fade__in;
+      }
+    }
+
+    &Bg {
+      &::before {
+        opacity: 0;
+      }
+      &.in {
+        &::before {
+          animation: fadeIn;
+          @extend .js-fade__in;
+        }
+      }
+    }
+  }
+
+  &__in {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+  }
+
+  &.in {
+    &.delay {
+     @include pc {
+      &-01 {
+        animation-delay: .25s;
+      }
+      &-02 {
+        animation-delay: .5s;
+      }
+      &-03 {
+        animation-delay: .75s;
+      }
+      &-04 {
+        animation-delay: 1s;
+      }
+      &-05 {
+        animation-delay: 1.25s;
+      }
+      &-06 {
+        animation-delay: 1.5s;
+      }
+      &-07 {
+        animation-delay: 1.75s;
+      }
+      &-08 {
+        animation-delay: 2s;
+      }
+     }
+    }
+  }
+}
+
+.move-light {
+  &::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: radial-gradient(hsla(54deg, 70%, 90%, 0) 0%, hsla(54deg, 70%, 90%, 0.4) 55%, hsla(8deg, 79%, 90%, 0.45) 70%, hsla(8deg, 79%, 90%, 0) 80%, hsla(8deg, 79%, 90%, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: 120% 120%;
+    background-size: 500% 500%;
+    mix-blend-mode: hard-light;
+  }
+  &.in {
+    &::after {
+      animation: move-light 1500ms 300ms ease-out forwards, move-light-opacity 1500ms 300ms forwards;
+      animation-delay: 2s;
+    }
+  }
+}
+
+.text-light {
+  &.in {
+    animation: text-light 3s forwards;
+  }
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+@keyframes fadeUp {
+  from {translate: 0 50%; opacity: 0;}
+  to {translate: 0 0; opacity: 1;}
+}
+@keyframes fadeDown {
+  from {translate: 0 -50%; opacity: 0;}
+  to {translate: 0 0; opacity: 1;}
+}
+@keyframes fadeRight {
+  from {translate: 50% 0; opacity: 0;}
+  to {translate: 0 0; opacity: 1;}
+}
+@keyframes fadeLeft {
+  from {translate: -50% 0; opacity: 0;}
+  to {translate: 0 0; opacity: 1;}
+}
+
+@keyframes move-light {
+  from {background-position: 150% 100%;}
+  to {background-position: 50% 50%;}
+}
+@keyframes move-light-up {
+  from {background-position: 120% 0%;}
+  to {background-position: 50% 50%;}
+}
+@keyframes move-light-opacity {
+  50% {opacity: .75;}
+  100% {opacity: 0;}
+}
+
+@keyframes text-light{
+  from {background-position: 100% 50%;}
+  to {background-position: 0% 50%;}
+}
+
+@keyframes text-color-w {
+  from {color: rgba(255,255,255,0)}
+  to {color: rgba(255,255,255,1)}
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 100;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+[data-animation^=fade-in]:not(.animated) {
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-left {
+  0% {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

@@ -1,0 +1,15 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin widthCalc($widthEl, $widthScrenn, $unit) {
+  width: calc($widthEl / $widthScrenn * $unit);
+}
+
+@mixin fontsCalc($widthEl, $widthScrenn, $unit) {
+  font-size: calc($widthEl / $widthScrenn * $unit);
+}
