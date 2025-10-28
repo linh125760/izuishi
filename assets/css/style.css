@@ -1171,7 +1171,7 @@ a {
   .works-item {
     display: flex;
     align-items: flex-end;
-    gap: 7rem;
+    gap: 6.4rem;
     padding-inline: 4rem 0;
   }
   .works-item:not(:last-child) {
@@ -1210,7 +1210,7 @@ a {
     border-radius: 1.3rem;
     min-width: 7.2rem;
     width: fit-content;
-    padding-inline: 1rem;
+    padding-inline: 1.3rem;
     height: 2.3rem;
     font-size: 1.4rem;
     letter-spacing: -0.05em;
