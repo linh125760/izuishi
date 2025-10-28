@@ -824,12 +824,14 @@ a {
     width: 3.3rem;
   }
   .header .hamburger.active span:nth-child(1) {
+    width: 4rem;
     transform: rotate(35deg) translate(0.8rem, 0.8rem);
   }
   .header .hamburger.active span:nth-child(2) {
     opacity: 0;
   }
   .header .hamburger.active span:nth-child(3) {
+    width: 4rem;
     transform: rotate(-35deg) translate(0.8rem, -0.8rem);
   }
   .header .header-menu {
@@ -838,12 +840,12 @@ a {
     height: auto;
     top: 8rem;
     right: -100vw;
-    background: rgba(25, 53, 109, 0.7);
+    background: rgba(33, 76, 146, 0.8);
     flex-direction: column;
     display: flex;
     justify-content: center;
-    padding: 3.5rem 4rem 6rem;
-    gap: 1.5rem;
+    padding: 3rem 4rem 6.5rem;
+    gap: 1.8rem;
     list-style: none;
     z-index: 1000;
     transition: all 0.3s;
@@ -970,9 +972,9 @@ a {
   .mv-title__bg {
     display: block;
     font-size: 5.5rem;
-    letter-spacing: -0.05em;
-    padding: 0.8rem 4.6rem 0.8rem;
-    width: 51.1rem;
+    letter-spacing: 0.02em;
+    padding: 0.8rem 0 0.8rem 4.6rem;
+    width: 51rem;
     font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
     color: #fff;
     background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
@@ -1525,7 +1527,8 @@ a {
     display: block;
     font-size: 3.2rem;
     width: 30.4rem;
-    padding: 0 2.4rem;
+    padding-left: 2.4rem;
+    letter-spacing: 0.05em;
     font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
     color: #fff;
     background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
