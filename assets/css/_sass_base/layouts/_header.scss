@@ -89,6 +89,7 @@
     }
 
     .hamburger.active span:nth-child(1) {
+      width: 4rem;
       transform: rotate(35deg) translate(0.8rem, 0.8rem);
     }
 
@@ -97,6 +98,7 @@
     }
 
     .hamburger.active span:nth-child(3) {
+      width: 4rem;
       transform: rotate(-35deg) translate(0.8rem, -0.8rem);
     }
 
@@ -106,16 +108,17 @@
       height: auto;
       top: 8rem;
       right: -100vw;
-      background: rgba(25, 53, 109, 0.7);
+      background: rgba(33, 76, 146, 0.8);
       flex-direction: column;
       display: flex;
       justify-content: center;
-      padding: 3.5rem 4rem 6rem;
-      gap: 1.5rem;
+      padding: 3rem 4rem 6.5rem;
+      gap: 1.8rem;
       list-style: none;
       z-index: 1000;
       transition: all 0.3s;
       font-size: 1.4rem;
+      letter-spacing: 0.07em;
     }
 
     .header-menu.active {
