@@ -63,6 +63,7 @@
 
 html {
   font-family: "KozGoPr6N W5", sans-serif;
+  font-family: "kozuka-gothic-pr6n", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 10px;
@@ -282,6 +283,7 @@ body {
   --color-bg-base: #fff;
   --font-weight-normal: 400;
   font-family: "KozGoPr6N W5", sans-serif;
+  font-family: "kozuka-gothic-pr6n", sans-serif;
   font-size: 1.6rem;
   font-weight: var(--font-weight-normal);
   color: var(--color-base);
@@ -743,12 +745,12 @@ a {
     min-width: 1280px;
     z-index: 6;
     padding: 2rem 5rem;
-    transition: background 0.3s;
+    transition: all 0.3s;
   }
-  .header.is-fixed {
+  .header.show {
     background: linear-gradient(180deg, rgba(3, 106, 167, 0.7) 0%, rgba(31, 65, 142, 0.7) 100%);
   }
-  .header.is-fixed .logo {
+  .header.show .logo {
     opacity: 1;
     visibility: visible;
   }
@@ -1065,7 +1067,7 @@ a {
     margin-right: 9.4rem;
   }
   .service-content .title {
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
     font-size: 3.2rem;
     letter-spacing: 0.1em;
     line-height: 1.40625;
@@ -1148,7 +1150,7 @@ a {
     font-size: 3.2rem;
     letter-spacing: 0.1em;
     line-height: 1.40625;
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
   }
   .strength-wrap .content .item .text {
     margin-top: -0.5rem;
@@ -1191,7 +1193,7 @@ a {
     margin-bottom: -1rem;
   }
   .works-item .content .price {
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
     font-size: 5.8rem;
     letter-spacing: 0.04em;
     line-height: 1.4137931034;
@@ -1317,7 +1319,7 @@ a {
     position: relative;
     font-size: 4.7rem;
     line-height: 1;
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
     letter-spacing: 0.06em;
     color: #4071d3;
     margin-bottom: -2.3rem;
@@ -1604,7 +1606,7 @@ a {
     background: #f2f2f2;
   }
   .service-content .title {
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
     font-size: 3.2rem;
     letter-spacing: 0.1em;
     line-height: 1.40625;
@@ -1691,7 +1693,7 @@ a {
     font-size: 2rem;
     letter-spacing: 0.1em;
     line-height: 1.4;
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
   }
   .strength-wrap .content .item .text {
     font-size: 1.3rem;
@@ -1734,7 +1736,7 @@ a {
     left: 0;
   }
   .works-item .content .price {
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
     font-size: 4.5rem;
     letter-spacing: 0.04em;
     line-height: 1.2;
@@ -1876,7 +1878,7 @@ a {
     position: relative;
     font-size: 4.7rem;
     line-height: 1;
-    font-family: "KozGoPr6N W7", sans-serif;
+    font-weight: 700;
     letter-spacing: 0.06em;
     color: #4071d3;
     margin-bottom: -2.3rem;

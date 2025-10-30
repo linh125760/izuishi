@@ -44,3 +44,18 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     window.scrollTo({ top, behavior: 'smooth' });
   });
 });
+
+const fv = document.querySelector('.mv');
+
+window.addEventListener('scroll', () => {
+  if (!fv) return;
+
+  const fvHeight = fv.offsetHeight;
+  const scrollY = window.scrollY;
+
+  if (scrollY > fvHeight) {
+    header.classList.add('show');
+  } else {
+    header.classList.remove('show');
+  }
+});

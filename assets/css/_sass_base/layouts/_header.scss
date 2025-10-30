@@ -8,9 +8,9 @@
     min-width: 1280px;
     z-index: 6;
     padding: 2rem 5rem;
-    transition: background 0.3s;
+    transition: all 0.3s;
 
-    &.is-fixed {
+    &.show {
       background: linear-gradient(180deg, rgba(3, 106, 167, 0.7) 0%, rgba(31, 65, 142, 0.7) 100%);
       .logo {
         opacity: 1;
