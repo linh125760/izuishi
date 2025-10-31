@@ -15,6 +15,7 @@
       position: relative;
       font-size: 1.6rem;
       padding-left: 29.9rem;
+      letter-spacing: 0.1em;
       &:before {
         content: "";
         position: absolute;
@@ -59,6 +60,8 @@
         padding: 0.8rem 0 0.8rem 4.6rem;
         width: 51rem;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         color: #fff;
         background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
         &:not(:last-child) {
@@ -72,6 +75,8 @@
         color: #fff;
         font-size: 2.2rem;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         &:before {
           content: "";
           position: absolute;
@@ -185,7 +190,7 @@
       margin-bottom: 3rem;
       .ja {
         font-family: "Noto Sans JP", sans-serif;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 6.5rem;
         line-height: 1;
         letter-spacing: -0.04em;
@@ -264,9 +269,9 @@
     .page-ttl {
       margin-bottom: 7.2rem;
       .ja {
-        padding-left: 24.7rem;
+        padding-left: 24rem;
         &:before {
-          width: 23.3rem;
+          width: 23rem;
         }
       }
     }
@@ -397,9 +402,9 @@
     .page-ttl {
       margin-bottom: 3.3rem;
       .ja {
-        padding-left: 14.7rem;
+        padding-left: 13.5rem;
         &:before {
-          width: 12.3rem;
+          width: 12rem;
         }
       }
     }
@@ -483,6 +488,8 @@
       .ja {
         font-size: 1.9rem;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
       }
     }
     &-phone {
@@ -507,6 +514,7 @@
       margin-bottom: 6.2rem;
       .ja {
         padding-left: 0;
+        padding-right: 0.8rem;
         &:before {
           display: none;
         }
@@ -515,6 +523,8 @@
 
     &-item {
       font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+      font-family: hiragino-kaku-gothic-pron, sans-serif;
+      font-weight: 600;
       background: #f5f5f5;
       padding: 3.5rem 14rem 3.6rem 7.2rem;
       &:not(:last-child) {
@@ -529,7 +539,6 @@
         margin-bottom: 1.5rem;
         &:before {
           content: "Q.";
-          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
           position: absolute;
           top: -0.5rem;
           left: -1px;
@@ -543,9 +552,10 @@
         line-height: calc(27 / 16);
         letter-spacing: 0.05em;
         padding-left: 5rem;
+        font-weight: 400;
         &:before {
           content: "A.";
-          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+          font-weight: 600;
           position: absolute;
           top: -0.5rem;
           left: -1px;
@@ -578,6 +588,8 @@
       dl {
         display: flex;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         font-size: 1.8rem;
         letter-spacing: 0.08em;
         &:not(:last-child) {
@@ -593,6 +605,10 @@
       width: 46.9rem;
       height: 26.5rem;
       flex-shrink: 0;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }
@@ -627,7 +643,8 @@
     .ja {
       position: relative;
       font-size: 1.1rem;
-      padding-left: 16.2rem;
+      padding-left: 15.8rem;
+      letter-spacing: 0.1em;
       &:before {
         content: "";
         position: absolute;
@@ -668,6 +685,8 @@
         padding-left: 2.4rem;
         letter-spacing: 0.05em;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         color: #fff;
         background: linear-gradient(-90deg, #036aa7 0%, #1f418e 100%);
         &:not(:last-child) {
@@ -681,6 +700,8 @@
         color: #fff;
         font-size: 1.3rem;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         &:before {
           content: "";
           position: absolute;
@@ -784,7 +805,7 @@
       margin-left: 0.5rem;
       .ja {
         font-family: "Noto Sans JP", sans-serif;
-        font-weight: 500;
+        font-weight: 700;
         font-size: 3rem;
         line-height: 1;
         letter-spacing: -0.04em;
@@ -867,9 +888,9 @@
       margin-bottom: 4rem;
       padding-inline: 0.5rem;
       .ja {
-        padding-left: 12.6rem;
+        padding-left: 12.7rem;
         &:before {
-          width: 11rem;
+          width: 11.5rem;
         }
       }
     }
@@ -1007,9 +1028,9 @@
       margin-left: 0.6rem;
       margin-bottom: 11rem;
       .ja {
-        padding-left: 7.5rem;
+        padding-left: 6.8rem;
         &:before {
-          width: 5.7rem;
+          width: 5.9rem;
         }
       }
     }
@@ -1094,6 +1115,8 @@
       .ja {
         font-size: 1.5rem;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
       }
     }
     &-phone {
@@ -1129,6 +1152,8 @@
 
     &-item {
       font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+      font-family: hiragino-kaku-gothic-pron, sans-serif;
+      font-weight: 600;
       background: #f5f5f5;
       padding: 2.5rem 4.3rem 4.8rem 4.3rem;
       margin-inline: -3rem;
@@ -1158,9 +1183,10 @@
         line-height: calc(22 / 13);
         letter-spacing: 0.05em;
         padding-left: 3.8rem;
+        font-weight: 400;
         &:before {
           content: "A.";
-          font-family: "Hiragino Maru Gothic ProN W6", sans-serif;
+          font-weight: 600;
           position: absolute;
           top: -0.5rem;
           left: -1px;
@@ -1192,6 +1218,8 @@
       padding-inline: 0.5rem;
       dl {
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         font-size: 1.5rem;
         line-height: 1.5;
         letter-spacing: 0.08em;
@@ -1208,6 +1236,10 @@
       width: 28.6rem;
       height: 16.2rem;
       margin-inline: auto;
+      iframe {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
 }

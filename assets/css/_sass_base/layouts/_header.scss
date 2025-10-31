@@ -33,6 +33,8 @@
         color: #fff;
         font-size: 18px;
         font-family: "Hiragino Maru Gothic ProN W4", sans-serif;
+        font-family: hiragino-kaku-gothic-pron, sans-serif;
+        font-weight: 600;
         &.btn-contact {
           position: relative;
           transform: translateX(-8px);
@@ -40,6 +42,7 @@
           width: 170px;
           height: 42px;
           display: flex;
+          justify-content: center;
           align-items: center;
           border: 1px solid #fff;
           background: #fff;
