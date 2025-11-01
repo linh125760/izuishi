@@ -512,9 +512,13 @@
     .page-ttl {
       text-align: center;
       margin-bottom: 6.2rem;
+      .en {
+        letter-spacing: 0.07em;
+      }
       .ja {
         padding-left: 0;
-        padding-right: 0.8rem;
+        padding-right: 1.1rem;
+        letter-spacing: 0.15em;
         &:before {
           display: none;
         }
@@ -1140,9 +1144,10 @@
       margin-bottom: 3rem;
       .en {
         margin-bottom: 1.2rem;
+        letter-spacing: 0.07em;
       }
       .ja {
-        padding-inline: 0 2px;
+        padding-inline: 0 1rem;
         letter-spacing: 0.12em;
         &:before {
           display: none;

@@ -1392,9 +1392,13 @@ a {
     text-align: center;
     margin-bottom: 6.2rem;
   }
+  .faq .page-ttl .en {
+    letter-spacing: 0.07em;
+  }
   .faq .page-ttl .ja {
     padding-left: 0;
-    padding-right: 0.8rem;
+    padding-right: 1.1rem;
+    letter-spacing: 0.15em;
   }
   .faq .page-ttl .ja:before {
     display: none;
@@ -1960,9 +1964,10 @@ a {
   }
   .faq .page-ttl .en {
     margin-bottom: 1.2rem;
+    letter-spacing: 0.07em;
   }
   .faq .page-ttl .ja {
-    padding-inline: 0 2px;
+    padding-inline: 0 1rem;
     letter-spacing: 0.12em;
   }
   .faq .page-ttl .ja:before {
