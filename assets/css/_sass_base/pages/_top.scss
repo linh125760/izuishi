@@ -289,6 +289,38 @@
       .image {
         width: 72.6rem;
         flex-shrink: 0;
+        &-wrap {
+          position: relative;
+          width: 72.6rem;
+          flex-shrink: 0;
+          display: flex;
+          gap: 4rem;
+          &:before,
+          &:after {
+            position: absolute;
+            top: 0;
+            background: rgba(255, 255, 255, 0.66);
+            font-family: var(--font-komu);
+            letter-spacing: 0.1em;
+            font-size: 4rem;
+            width: 16.2rem;
+            height: 4.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &:before {
+            left: 0;
+            content: "BEFOR";
+          }
+          &:after {
+            right: 18.1rem;
+            content: "AFTER";
+          }
+          img {
+            width: 34.3rem;
+          }
+        }
       }
 
       .content {
@@ -603,6 +635,11 @@
           width: 19rem;
           flex-shrink: 0;
         }
+        dd {
+          .line {
+            width: 17rem;
+          }
+        }
       }
     }
     &-map {
@@ -907,6 +944,37 @@
 
       .image {
         margin-bottom: 4.1rem;
+        &-wrap {
+          position: relative;
+          display: flex;
+          gap: 2rem;
+          margin-bottom: 4.1rem;
+          &:before,
+          &:after {
+            position: absolute;
+            top: 0;
+            background: rgba(255, 255, 255, 0.66);
+            font-family: var(--font-komu);
+            letter-spacing: 0.1em;
+            font-size: 1.7rem;
+            width: 7.4rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          &:before {
+            left: 0;
+            content: "BEFOR";
+          }
+          &:after {
+            right: 8.3rem;
+            content: "AFTER";
+          }
+          img {
+            width: 15.7rem;
+          }
+        }
       }
 
       .content {
@@ -1235,6 +1303,11 @@
 
         &:not(:last-child) {
           margin-bottom: 1.7rem;
+        }
+      }
+      dd {
+        .line {
+          width: 15rem;
         }
       }
     }
